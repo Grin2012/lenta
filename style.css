@@ -15,7 +15,7 @@ body{
 .header_content {
     display: block;
     box-sizing: border-box;
-    max-width: 1303px;
+    width: 1303px;
     margin: auto;
     height: 100%;
     padding: 17px 50px 0 50px;
@@ -110,7 +110,7 @@ body{
     top: 205px;
     right: 13%;
     border-radius: 50%;
-    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.15);
     background: #ddba76 url(./images/plus.png)  no-repeat center;
     width: 60px;
     height: 60px;
@@ -160,15 +160,14 @@ body{
     color: #7f7f7f;
     font-size: 16px;
     font-weight: 400;
-    padding-left: 55%;
+    float: right;
 }
 .post__header_link{
-    vertical-align: middle;
-    display: inline-block;
     background: url(./images/link.png) no-repeat center;
     width: 23px;
-    height: 23px;
-    padding-left: 10px;
+    height: 45px;
+    padding-left: 20px;
+    float: right;
 }
 .post__header_link :hover{
     background: url(./images/link_active.png) no-repeat center;
@@ -298,17 +297,14 @@ body{
 
 
 @media screen and (max-width: 1300px) {
-    .articles{
+    .header_content {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .articles{
-        width: 87%;
-    }
-    .header_content {
-        width: 100%;
+    .posts{
+        width: 90%;
     }
 }
 @media screen and (max-width: 768px) {
