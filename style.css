@@ -46,12 +46,13 @@ body{
 }
 .header__search-user {
     display: inline-block;
-    margin-left: 45%;
+    float: right;
 }
 .header__search {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
+    margin-right: 30px;
 }
 .header__search form {
     position: relative;
@@ -89,11 +90,10 @@ body{
     border-color: #debb77
 }
 .header__user {
-    position: relative;
-    top: -30px;
-    right: -250px;
+    display: inline-block;
+    vertical-align: middle;
     border-radius: 50%;
-    background: url("./images/avatar.png") no-repeat center;
+    background: url(./images/avatar.png) no-repeat center;
     background-size: contain;
     width: 32px;
     height: 32px;
@@ -115,9 +115,10 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
+    z-index: 100;
 }
 .add-photo:hover{
-    background: #ddbf70 url(./images/plus.png)  no-repeat center;
+    background: #a98d55 url(./images/plus.png)  no-repeat center;
 }
 .posts{
     width: 597px;
@@ -286,8 +287,6 @@ body{
     cursor: pointer;
 }
 .post__footer_comment button:before {
-    content: "\f002";
-    font-family: 'FontAwesome';
     font-size: 16px;
     color: #ffffff;
 }
@@ -300,15 +299,59 @@ body{
     .header_content {
         width: 100%;
     }
+    .main {
+        width: 100%;
+    }
+    .add-photo {
+        right: 30px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    .posts{
-        width: 90%;
+    .header_content {
+        padding: 17px 30px 0 30px;
     }
+    .add-photo {
+        right: 15px;
+    }
+
 }
 @media screen and (max-width: 768px) {
+    .header_content {
+        padding: 17px 5px 0 5px;
+    }
+    .add-photo {
+        right: 5px;
+    }
+}
 
+@media screen and (max-width: 680px) {
+    .header {
+        height: 114px;
+        margin: auto;
+    }
+    .header_content {
+        width: 320px;
+    }
+    .header__title {
+        padding: 0 10px 0 25px;
+    }
+    .header__search-user {
+        display: block;
+        float: none;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .header-nav {
+
+        word-spacing: 14px;
+    }
+}
+
+@media screen and (max-width: 597px) {
+    .posts{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
