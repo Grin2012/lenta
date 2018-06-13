@@ -371,6 +371,9 @@ body{
     .post__footer_comment {
         font-size: 14px;
     }
+    .post__footer_description {
+        line-height: 20px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -385,7 +388,7 @@ body{
     .post__footer_description {
         font-size: 12px;
     }
-    .post__footer_comment {
+    .post__footer_comments {
         font-size: 12px;
     }
 }
