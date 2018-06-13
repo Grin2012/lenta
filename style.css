@@ -41,7 +41,7 @@ body{
      font-family: 'Open Sans', sans-serif;
      cursor: pointer;
  }
-.header-nav__link :hover {
+.header-nav__link:hover {
     color: #debb77;
 }
 .header__search-user {
@@ -116,7 +116,7 @@ body{
     height: 60px;
     cursor: pointer;
 }
-.add-photo :hover{
+.add-photo:hover{
     background: #ddbf70 url(./images/plus.png)  no-repeat center;
 }
 .posts{
@@ -169,9 +169,9 @@ body{
     padding-left: 20px;
     float: right;
 }
-.post__header_link :hover{
+.post__header_link:hover{
     background: url(./images/link_active.png) no-repeat center;
-    background-size: contain;
+    background-size: 23px;
 }
 .post__image {
     display: block;
