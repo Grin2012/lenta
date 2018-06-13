@@ -343,8 +343,10 @@ body{
         text-align: center;
     }
     .header-nav {
-
         word-spacing: 14px;
+    }
+    .posts {
+        margin: 160px auto 0 auto;
     }
 }
 
@@ -355,11 +357,37 @@ body{
 }
 
 @media screen and (max-width: 480px) {
-
+    .post__footer_description {
+        font-size: 16px;
+    }
+    .post__header_nik {
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 12px;
+    }
+    .post__header_date {
+        font-size: 14px;
+    }
+    .post__footer_comment {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 320px) {
-
+    .post__header_nik {
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 8px;
+    }
+    .post__header_date {
+        font-size: 12px;
+    }
+    .post__footer_description {
+        font-size: 12px;
+    }
+    .post__footer_comment {
+        font-size: 12px;
+    }
 }
 
 
